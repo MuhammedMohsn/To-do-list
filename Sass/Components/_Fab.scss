@@ -1,0 +1,58 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+%shared {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  @include flex_box(center);
+  margin-bottom: 10px;
+}
+.main_btn {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: $pink_color;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  @include flex_box(center);
+  .fa-circle-plus {
+    color: $black_color !important;
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+    transition: all 3s !important;
+  }
+  .fab_btns {
+    overflow: hidden;
+    height: 250px;
+    display: none !important;
+    width: 50px;
+    background-color: $white_color;
+    position:fixed;
+    right: 10px;
+    bottom: 100px;
+    transition: all 0.5s !important;
+  }
+}
+
+@for $i from 1 through 4 {
+  .fab_btn:nth-child(#{$i}) {
+    @extend %shared;
+  }
+}
+
+.fab_btn:nth-child(1) {
+  background-color: purple;
+}
+.fab_btn:nth-child(2) {
+  background-color: green;
+}
+.fab_btn:nth-child(3) {
+  background-color: rgb(0, 149, 255);
+}
+.fab_btn:nth-child(4) {
+  background-color: blue;
+}

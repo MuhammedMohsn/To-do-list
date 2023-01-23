@@ -1,0 +1,32 @@
+@use '../variables' as *;
+%shared{
+    color:$white_color;
+    margin:0 5px 0 5px ;
+    border-radius: 7px;
+    border: none;
+    outline:none;
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+}
+form{
+    width:80%;
+    margin:0 auto;
+    margin-bottom: 10px;
+    input{
+        width:70%  ;
+        border:1px solid $white_color;
+        padding:4px;
+    }
+    .addBtn,.clearBtn{
+        @extend %shared
+    }
+    .addBtn{
+        background-color:rgb(85, 99, 107)
+    
+    }
+    .clearBtn{
+        background-color:rgba(255, 0, 0, 0.616);
+    
+    }
+}

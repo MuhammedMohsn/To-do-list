@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header .tasks_count,
+header .tasks_done {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+header {
+  background-color: red;
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  flex: 1;
+}
+header .tasks_count,
+header .tasks_done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .tasks_count {
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+}
+header .tasks_done {
+  background-color: blue;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.alert_area {
+  color: white;
+  background-color: red;
+  width: 100%;
+  text-align: center;
+  transition: height 2s;
+}
+
+.empty_tasks {
+  text-align: center;
+  color: aqua;
+  font-size: medium;
+}
+
+.done {
+  color: rgb(0, 153, 255);
+  text-decoration: line-through;
+}
+
+.list {
+  list-style: none;
+  border: 1px solid aqua;
+  border-radius: 5px;
+}
+.list .list_item {
+  border-bottom: 1px solid aqua;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.list .list_item .del {
+  align-self: flex-end;
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.list .list_item .task {
+  background-color: rgb(96, 96, 191);
+  cursor: pointer;
+  width: 95%;
+  padding-left: 20px;
+}
+
+form .addBtn, form .clearBtn {
+  color: white;
+  margin: 0 5px 0 5px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+form input {
+  width: 70%;
+  border: 1px solid white;
+  padding: 4px;
+}
+form .addBtn {
+  background-color: rgb(85, 99, 107);
+}
+form .clearBtn {
+  background-color: rgba(255, 0, 0, 0.616);
+}
+

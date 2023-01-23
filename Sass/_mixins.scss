@@ -1,0 +1,5 @@
+@mixin flex_box($justify_content_type) {
+display: flex;
+justify-content: $justify_content_type;
+align-items: center
+}

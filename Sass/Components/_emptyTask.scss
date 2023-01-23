@@ -1,0 +1,17 @@
+@use '../variables.scss' as *;
+.alert_area{
+    color:$white_color;
+    background-color:$red_color;
+    width: 100%;
+    text-align: center;
+    transition:height 2s ;
+}
+.empty_tasks{
+    text-align: center;
+    color:$aqua_color;
+    font-size:medium;
+}
+.done{
+    color:rgb(0, 153, 255);
+    text-decoration:line-through;
+}
